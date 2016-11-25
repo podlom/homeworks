@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forms demo</title>
+</head>
+<body>
+<!-- Header section starts -->
+    <header>
+        <h1>Forms demo</h1>
+    </header>
+
+    <form method="post" action="form.php">
+        <div>
+            <label>Name *: </label><input required="required" placeholder="Input your name" name="uname" type="text">
+        </div>
+        <div>
+            <label>Password *: </label><input required="required" placeholder="Input your password" name="upass" type="password">
+        </div>
+        <div>
+            <label>Email *: </label><input required="required" placeholder="Input your email" name="umail" type="email">
+        </div>
+        <div>
+            <label>Agree to the terms of use: </label><input type="checkbox" name="uagree">
+        </div>
+        <div>
+            <label>Country: </label><select name="ucountry">
+                <option value="RU">Russinan Federation</option>
+                <option value="UA" selected>Ukraine</option>
+                <option value="MO">Moldova</option>
+            </select>
+        </div>
+        <div>
+            <label>Comments:</label><br>
+            <textarea name="ucomments" cols="45" rows="7"></textarea>
+        </div>
+        <input value="Send form data" type="submit">
+    </form>
+
+</body>
+</html>

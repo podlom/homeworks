@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Iframes demo</title>
+</head>
+<body>
+<!-- Header section starts -->
+    <header>
+        <h1>Iframes demo</h1>
+    </header>
+
+    <div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="">Link 1</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+
+    </aside>
+
+    <article>
+
+    </article>
+
+    <section>
+        <header>
+            <h2>Section header</h2>
+        </header>
+        <div>
+
+        </div>
+    </section>
+
+    <iframe width="600" height="300" src="index4-iframe.html"></iframe>
+    <iframe width="600" height="300" src="//bing.com/"></iframe>
+
+<footer>
+    <p>Copyright text</p>
+</footer>
+
+<script type="text/javascript">
+    setTimeout (function() {
+        if (self.parent.frames.length != 0)
+            self.parent.location = "index4-iframe.html";
+    }, 1500);
+</script>
+
+</body>
+</html>
